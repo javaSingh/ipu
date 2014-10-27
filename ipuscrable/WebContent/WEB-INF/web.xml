@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>scrabel2</display-name>
+  <welcome-file-list>
+    <welcome-file>freeseller.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>AddWord</display-name>
+    <servlet-name>AddWord</servlet-name>
+    <servlet-class>AddWord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddWord</servlet-name>
+    <url-pattern>/WordAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>WordCorrectCtrl</display-name>
+    <servlet-name>WordCorrectCtrl</servlet-name>
+    <servlet-class>WordCorrectCtrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WordCorrectCtrl</servlet-name>
+    <url-pattern>/checkServ</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Playgame</display-name>
+    <servlet-name>Playgame</servlet-name>
+    <servlet-class>Playgame</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Playgame</servlet-name>
+    <url-pattern>/playgame</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Subscribe</display-name>
+    <servlet-name>Subscribe</servlet-name>
+    <servlet-class>Subscribe</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Subscribe</servlet-name>
+    <url-pattern>/Subscribe</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Unscramble</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+      <!-- Bootstrap -->
+      <link href='css/bootstrap.min.css' rel='stylesheet'>
+  <link href='css/a.css' rel='stylesheet'>
+  <link href='ccss/reset.css' rel='stylesheet'>
+  <link href='ccss/test.css' rel='stylesheet'>
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media 
+         queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page 
+         via file:// -->
+      <!--[if lt IE 9]>
+         <script src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+            html5shiv.js'></script>
+         <script src='https://oss.maxcdn.com/libs/respond.js/1.3.0/
+            respond.min.js'></script>
+      <![endif]-->
+     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  
+  
+  
+  
+  <script>
+function loadXMLDoc()
+{
+var xmlhttp;
+var i=0;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  
+    document.getElementById("correctword").innerHTML=xmlhttp.responseText;
+    
+  }
+xmlhttp.open("GET","Test1",true);
+xmlhttp.send();
+}
+</script>
+  
+  
+  
+  
+  
+  
+  
+   </head>
+
+   <body>
+
+   <div class='container'>
+   
+<div class="scroll-top-wrapper ">
+    <span class="scroll-top-inner">
+        <i class="fa fa-2x fa-arrow-circle-up"></i>
+    </span>
+</div>
+   <nav role='navigation' class='navbar navbar-inverse'>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class='navbar-header'>
+        <button type='button' data-target='#navbarCollapse' data-toggle='collapse' class='navbar-toggle'>
+            <col-md- class='sr-only'>Toggle navigation</col-md->
+            <col-md- class='icon-bar'></col-md->
+            <col-md- class='icon-bar'></col-md->
+            <col-md- class='icon-bar'></col-md->
+        </button>
+        <a href='freeseller.html' class='navbar-brand'>FreeSeller</a>
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div id='navbarCollapse' class='collapse navbar-collapse'>
+        <ul class='nav navbar-nav'>
+            <li class='active'><a href='freeseller.html'>Home</a></li>
+            <li><a href='#'>C (See)</a></li>
+            <li><a href='#'>C++ </a></li>
+			<li><a href='#'>Java</a></li>
+			<li><a href='freeseller.html#ada'> ADA</a></li>
+			<li><a href='unscramble.html'> Unscramble</a></li>
+
+
+			</ul>
+        <ul class='nav navbar-nav navbar-right'>
+            <li><a href='jackie.html'>Login</a></li>
+        </ul>
+    </div>
+</nav>
+   
+
+
+   
+   <div class='div1'>
+	  
+	  
+	<div class='jumbotron'>
+	 <p>
+	 <h2>
+	 Unscrambler.
+	 </h2>
+	 </p>
+	 </div> 
+	 
+	  <div class='row'>
+	  <div class='col-md-3'></div>
+	  <div class='col-md-6'>
+	  <p>
+	  <h3>
+	  Enter word to Unscramble.
+	  </h3>
+	  eg: enter ' saope ' and it displays ' aesop '
+	  </p><br>
+	  <form action='checkServ'>
+	  <input type='text' class='form-control' placeholder='enter your word' name='word' required autofocus>
+	  </input>
+	  
+	  </form>
+	  <div id='correctword' class='correctword'>the correct word will come here.</div>
+	  </div>
+	 <div class='col-md-3'></div>
+	 </div>
+	 <br>
+	 <div class='jumbotron'>
+	 <p>
+	 <h2>
+	 Here is the crossword solver.
+	 
+	 </h2></p><br>
+	 </div>
+	 <div class='row'>
+	 <div class='span12'>
+	  <div class='col-md-3'></div>
+	  <div class='col-md-6'>
+	  <p>
+	  <h3>
+	  Enter word.
+	  </h3>
+	  eg: enter ' aes__ ' and it displays ' aesop '
+	  </p><br>
+	  <form action='crossword.jsp'>
+	  <input type='text' name='word' class='form-control' placeholder='use _ for missing letter' required autofocus>
+	  </input>
+	  
+	  </form>
+	  </div>
+	 <div class='col-md-3'></div>
+	 </div>
+	 </div>
+<br>
+	<div class='jumbotron'>
+	 <p>
+	 <h3>
+	 Let's Play. Guess the Word!!!
+	 </h3>
+	 </p>
+	 </div> 
+	 <div class='row'>
+	 <div class='span12'>
+	  <div class='col-md-3'></div>
+	  <div class='col-md-6'>
+	  <p>
+	  <h3>
+	  Comming Soon...
+	  </h3>
+	  
+	  </p><br>
+	  
+	  </div>
+	 <div class='col-md-3'></div>
+	 </div>
+	 </div> 
+	 </div>
+	
+	
+	<br>
+	<br>  
+	<div class='row'>
+	  <div class='col-md-3'></div>
+	  
+	  <div class='col-md-6'>
+	  <div class='signup'>
+	  
+	  <!-- Begin MailChimp Signup Form -->
+<style type='text/css'>
+	
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id='mc_embed_signup'>
+<form action=action='http://cloudbees.us8.list-manage.com/subscribe/post?u=5a92dc0bb486854f432c87ea3&amp;id=b6a88ba2a2' method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' class='validate' target='_blank' novalidate>
+	<h2><a href='http://eepurl.com/XtIY1'><p id='pid'>thanks us by signing in!!(click this link)</p></a></h2>
+<div class='indicates-required'><col-md- class='asterisk'>*</col-md-> indicates required</div>
+<br>
+<div class='mc-field-group'>
+	<input type='email' value='' name='EMAIL' class='required email form-control' id='mce-EMAIL' placeholder='email *'>
+</div>
+<br>
+<div class='mc-field-group'>
+	<input type='text' value='' name='FNAME' class='form-control' id='mce-FNAME' placeholder='firstName'>
+</div>
+<br>
+<div class='mc-field-group'>
+	<input type='text' value='' name='LNAME' class='form-control' id='mce-LNAME' placeholder='lastName'>
+</div>
+	<div id='mce-responses' class='clear'>
+		<div class='response' id='mce-error-response' style='display:none'></div>
+		<div class='response' id='mce-success-response' style='display:none'></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style='position: absolute; left: -5000px;'><input type='text' name='b_5a92dc0bb486854f432c87ea3_a75b9d356d' tabindex='-1' value=''></div>
+	<br>
+    <div class='clear'><input type='submit' value='Subscribe' name='subscribe' id='mc-embedded-subscribe' class='button'></div>
+</form>
+</div>
+<script type='text/javascript'>
+var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';
+try {
+    var jqueryLoaded=jQuery;
+    jqueryLoaded=true;
+} catch(err) {
+    var jqueryLoaded=false;
+}
+var head= document.getElementsByTagName('head')[0];
+if (!jqueryLoaded) {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js';
+    head.appendChild(script);
+    if (script.readyState && script.onload!==null){
+        script.onreadystatechange= function () {
+              if (this.readyState == 'complete') mce_preload_check();
+        }    
+    }
+}
+
+var err_style = '';
+try{
+    err_style = mc_custom_error_style;
+} catch(e){
+    err_style = '#mc_embed_signup input.mce_inline_error{border-color:#6B0505;} #mc_embed_signup div.mce_inline_error{margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff;}';
+}
+var head= document.getElementsByTagName('head')[0];
+var style= document.createElement('style');
+style.type= 'text/css';
+if (style.styleSheet) {
+  style.styleSheet.cssText = err_style;
+} else {
+  style.appendChild(document.createTextNode(err_style));
+}
+head.appendChild(style);
+setTimeout('mce_preload_check();', 250);
+
+var mce_preload_checks = 0;
+function mce_preload_check(){
+    if (mce_preload_checks>40) return;
+    mce_preload_checks++;
+    try {
+        var jqueryLoaded=jQuery;
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'http://downloads.mailchimp.com/js/jquery.form-n-validate.js';
+    head.appendChild(script);
+    try {
+        var validatorLoaded=jQuery('#fake-form').validate({});
+    } catch(err) {
+        setTimeout('mce_preload_check();', 250);
+        return;
+    }
+    mce_init_form();
+}
+function mce_init_form(){
+    jQuery(document).ready( function($) {
+      var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
+      var mce_validator = $('#mc-embedded-subscribe-form').validate(options);
+      $('#mc-embedded-subscribe-form').unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
+      options = { url: 'http://cloudbees.us8.list-manage.com/subscribe/post-json?u=5a92dc0bb486854f432c87ea3&id=a75b9d356d&c=?', type: 'GET', dataType: 'json', contentType: 'application/json; charset=utf-8',
+                    beforeSubmit: function(){
+                        $('#mce_tmp_error_msg').remove();
+                        $('.datefield','#mc_embed_signup').each(
+                            function(){
+                                var txt = 'filled';
+                                var fields = new Array();
+                                var i = 0;
+                                $(':text', this).each(
+                                    function(){
+                                        fields[i] = this;
+                                        i++;
+                                    });
+                                $(':hidden', this).each(
+                                    function(){
+                                        var bday = false;
+                                        if (fields.length == 2){
+                                            bday = true;
+                                            fields[2] = {'value':1970};//trick birthdays into having years
+                                        }
+                                    	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                    		this.value = '';
+									    } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                    		this.value = '';
+									    } else {
+									        if (/\[day\]/.test(fields[0].name)){
+    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
+									        } else {
+    	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+	                                        }
+	                                    }
+                                    });
+                            });
+                        $('.phonefield-us','#mc_embed_signup').each(
+                            function(){
+                                var fields = new Array();
+                                var i = 0;
+                                $(':text', this).each(
+                                    function(){
+                                        fields[i] = this;
+                                        i++;
+                                    });
+                                $(':hidden', this).each(
+                                    function(){
+                                        if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
+                                    		this.value = '';
+									    } else {
+									        this.value = 'filled';
+	                                    }
+                                    });
+                            });
+                        return mce_validator.form();
+                    }, 
+                    success: mce_success_cb
+                };
+      $('#mc-embedded-subscribe-form').ajaxForm(options);
+      
+      
+    });
+}
+function mce_success_cb(resp){
+    $('#mce-success-response').hide();
+    $('#mce-error-response').hide();
+    if (resp.result=='success'){
+        $('#mce-'+resp.result+'-response').show();
+        $('#mce-'+resp.result+'-response').html(resp.msg);
+        $('#mc-embedded-subscribe-form').each(function(){
+            this.reset();
+    	});
+    } else {
+        var index = -1;
+        var msg;
+        try {
+            var parts = resp.msg.split(' - ',2);
+            if (parts[1]==undefined){
+                msg = resp.msg;
+            } else {
+                i = parseInt(parts[0]);
+                if (i.toString() == parts[0]){
+                    index = parts[0];
+                    msg = parts[1];
+                } else {
+                    index = -1;
+                    msg = resp.msg;
+                }
+            }
+        } catch(e){
+            index = -1;
+            msg = resp.msg;
+        }
+        try{
+            if (index== -1){
+                $('#mce-'+resp.result+'-response').show();
+                $('#mce-'+resp.result+'-response').html(msg);            
+            } else {
+                err_id = 'mce_tmp_error_msg';
+                html = '<div id=''+err_id+'' style=''+err_style+''> '+msg+'</div>';
+                
+                var input_id = '#mc_embed_signup';
+                var f = $(input_id);
+                if (ftypes[index]=='address'){
+                    input_id = '#mce-'+fnames[index]+'-addr1';
+                    f = $(input_id).parent().parent().get(0);
+                } else if (ftypes[index]=='date'){
+                    input_id = '#mce-'+fnames[index]+'-month';
+                    f = $(input_id).parent().parent().get(0);
+                } else {
+                    input_id = '#mce-'+fnames[index];
+                    f = $().parent(input_id).get(0);
+                }
+                if (f){
+                    $(f).append(html);
+                    $(input_id).focus();
+                } else {
+                    $('#mce-'+resp.result+'-response').show();
+                    $('#mce-'+resp.result+'-response').html(msg);
+                }
+            }
+        } catch(e){
+            $('#mce-'+resp.result+'-response').show();
+            $('#mce-'+resp.result+'-response').html(msg);
+        }
+    }
+}
+
+</script>
+<!--End mc_embed_signup-->
+</div>
+</div>
+	 <br>
+	 
+	 
+	 <div class='col-md-3'>
+	 <div class='fblikediv'>
+	 <iframe class='fblike'  src="http://www.facebook.com/plugins/like.php?&locale=en_US&href=http%3A%2F%2Fwww.facebook.com/sadarbazarprogram&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+	 </div>
+	 </div>
+	 </div>
+	 
+	 <br>
+	
+<div class='footer'>
+<nav role='navigation' class='navbar navbar-inverse'>
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class='navbar-header'>
+        <button type='button' data-target='#navbarCollapse' data-toggle='collapse' class='navbar-toggle'>
+            <col-md- class='sr-only'>Toggle navigation</col-md->
+            <col-md- class='icon-bar'></col-md->
+            <col-md- class='icon-bar'></col-md->
+            <col-md- class='icon-bar'></col-md->
+        </button>
+        <a href='freeseller.html' class='navbar-brand'>FreeSeller</a>
+    </div>
+    <!-- Collection of nav links and other content for toggling -->
+    <div id='navbarCollapse' class='collapse navbar-collapse'>
+	</div>
+	</nav>
+	</div>
+  	  
+	  
+	  
+	  
+	  
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src='https://code.jquery.com/jquery.js'></script>
+      <!-- Include all compiled plugins (below), or include individual files 
+            as needed -->
+      <script src='js/bootstrap.min.js'></script>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script>
+ 
+$(function(){
+ 
+    $(document).on( 'scroll', function(){
+ 
+        if ($(window).scrollTop() > 1) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+    });
+});
+</script>
+   <script>
+ 
+$(function(){
+ 
+    $(document).on( 'scroll', function(){
+ 
+        if ($(window).scrollTop() > 1) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+    });
+ 
+    $('.scroll-top-wrapper').on('click', scrollToTop);
+});
+ 
+function scrollToTop() {
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $('body');
+    offset = element.offset();
+    offsetTop = offset.top;
+    $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
+</script>
+</div>
+</div> </body>
+</html>

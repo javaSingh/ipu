@@ -1,0 +1,18 @@
+mysql on cloudbees
+
+create a database on the cloudbees server
+bind the database to your app.
+use the gui mysql workbench to connect to the database on the cloudbees server.
+	you need to fill info such as server address, username, password etc
+	port be default ie 3306  (cloudbees use the default port)
+
+(this is how mysql works. there is a database on a server. mysql connects to that server and 
+we can work on that database ie- creating table, entering data etc. by default mysql operates on 
+local host. so we need to create a new  connection)
+
+check the connection once reqd info are filled in the mysql gui.
+
+we are now ready to work on that db
+	create a table and add data
+	use (url:user:password) from the cloudbees page for getting the connection
+	
